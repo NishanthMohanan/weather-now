@@ -22,7 +22,8 @@ export default function Header({ onSearch }) {
           onChange={(e) => setInput(e.target.value)}
           placeholder="Enter city name..."
           className="flex-grow p-3 text-white placeholder-white/70 bg-transparent outline-none text-lg"
-        />
+          />
+
         <button
           type="submit"
           className="bg-white/30 hover:bg-white/50 text-white font-semibold rounded-full px-5 py-2 transition"
