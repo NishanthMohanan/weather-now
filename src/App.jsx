@@ -44,7 +44,7 @@ export default function App() {
 
   return (
     <div className={`min-h-screen flex flex-col items-center justify-start p-6 bg-gradient-to-br ${getBackgroundClass()} text-white`}>
-      <h1 className="text-4xl font-bold mb-6 drop-shadow-lg">Weather Now🌡️☁️</h1>
+      <h1 className="text-4xl font-bold mb-6 drop-shadow-lg">Weather Now☁️</h1>
 
       <Header onSearch={setCity} />
 

@@ -11,5 +11,5 @@ export function getWeatherIcon(code) {
   if ([71, 73, 75, 77, 85, 86].includes(code)) return "❄️"; // Snow
   if ([95, 96, 99].includes(code)) return "⛈️"; // Thunderstorm
 
-  return "🌈"; // Default / unknown
+  return "🌈"; 
 }
