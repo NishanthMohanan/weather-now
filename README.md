@@ -4,18 +4,6 @@ A simple and elegant **Weather Forecast Application** built using **React + Tail
 
 ---
 
-##  Live Demo
-> (After deployment)  
- [View Live on CodeSandbox](YOUR_DEPLOYMENT_LINK_HERE)
-
----
-
-##  ChatGPT Work Reference
-As per Level 1 submission requirement, here is the ChatGPT working session link:  
-(https://chatgpt.com/share/6908728f-60b4-8006-9c67-f3f38b40c0ce)
-
----
-
 ##  Features
 Search weather by city name  
 Displays temperature, humidity, wind speed, and condition description  
@@ -40,7 +28,7 @@ Uses public Open-Meteo API (no authentication required)
 
 Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/weather-now.git
+git clone https://github.com/NishanthMohanan/weather-now.git
 cd weather-now
 
 Install dependencies
