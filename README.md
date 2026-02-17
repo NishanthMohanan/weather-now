@@ -14,79 +14,82 @@ Uses public Open-Meteo API (no authentication required)
 
 ---
 
-##  Tech Stack
+## Technologies Used
 
-**Frontend Framework:** React (Vite)  
-**Styling:** Tailwind CSS  
-**Data Source:** [Open-Meteo API](https://open-meteo.com/)  
-**State Management:** React useState, useEffect hooks  
-**Deployment:** CodeSandbox 
+- **React** 19.1.1 – UI framework
+- **Vite** 7.1.7 – Build tool & dev server
+- **Tailwind CSS** 3.4.18 – Utility-first styling
+- **Open-Meteo API** – Free weather data provider
+- **ESLint** – Code quality tool
 
 ---
 
-##  Setup Instructions
 
-Clone the repository
+## Installation
+
+**Clone repository:**
 ```bash
 git clone https://github.com/NishanthMohanan/weather-now.git
 cd weather-now
+```
 
-Install dependencies
+**Install dependencies:**
+```bash
 npm install
+```
 
-Run locally
+**Run development server:**
+```bash
 npm run dev
-The app will run on http://localhost:5173
+```
+
+**Production Build:**
+```bash
+npm run build
+npm start
+```
+
+---
+
+## Design Goals
+
+- **Scalability** – Modular architecture for feature expansion
+- **Reusability** – Shared components and utility functions
+- **Security** – Secure API usage with no data exposure
+- **Clean Architecture** – Clear separation of concerns
+- **Enterprise Readiness** – Production-optimized builds and linting
+
+---
+
+## Key Features
+
+- Search weather by city name with auto-suggestions
+- Real-time weather data (temperature, humidity, wind speed)
+- 5-day weather forecast with temperature trends
+- Dynamic gradient backgrounds based on temperature
+- Responsive glassmorphism UI design
+- Public API integration (no authentication required)
+
+## Architecture Overview
+
+Modular component-based architecture with React hooks for state management:
+- **Components:** Reusable UI modules (Header, WeatherCard, Forecast)
+- **Utils:** Abstracted API calls and helper functions
+- **Styling:** Tailwind CSS with responsive design patterns
+
+## Security Features
+
+- Public API endpoints only (no secrets exposed)
+- Client-side data processing exclusively
+- HTTPS-enforced API communications
+- No sensitive user data persistence
+- Zero external authentication requirements
 
 
-Folder Structure
+---
 
-weather-now/
-│
-├── src/
-│   ├── components/
-│   │   ├── Header.jsx
-│   │   ├── WeatherCard.jsx
-│   │   └── Forecast.jsx
-│   │
-│   ├── utils/
-│   │   ├── fetchWeatherData.js
-│   │   ├── weatherIcons.js
-│   │   └── backgroundHelper.js
-│   │
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── package.json
-├── README.md
-└── vite.config.js
+## Author
 
-Example API Reference
-Geocoding API (Get Coordinates by City Name):
-
-https://geocoding-api.open-meteo.com/v1/search?name={city}
-
-
-Weather Forecast API:
-
-
-https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,relative_humidity_2m,wind_speed_10m&daily=temperature_2m_max,weather_code&forecast_days=5&timezone=auto
-
-
-How It Works
-The user enters a city name in the search bar.
-
-The app fetches the coordinates using Open-Meteo’s Geocoding API.
-
-It then requests current weather + 5-day forecast for those coordinates.
-
-Results are shown in a responsive UI with weather details and gradients.
-
-
-Author
-Nishanth M
-nishanthmohanannair@gmail.com
-https://github.com/NishanthMohanan
+**Nishanth M** 
 
 
